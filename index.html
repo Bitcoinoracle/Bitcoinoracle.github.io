@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Oracle - Insights & Predictions ₿</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #000; color: #fff; margin: 0; padding: 0; }
+        header { background: #f7931a; padding: 20px; text-align: center; }
+        .hero { font-size: 2em; }
+        section { padding: 20px; max-width: 800px; margin: auto; }
+        #btc-price { font-size: 1.5em; color: #f7931a; }
+        footer { text-align: center; padding: 10px; background: #333; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hero">Bitcoin Oracle ₿</h1>
+        <p>Your source for real Bitcoin insights, no hype. Follow on X: <a href="https://x.com/bitcoinoracle_" style="color: #fff;">@bitcoinoracle_</a></p>
+    </header>
+    
+    <section>
+        <h2>Latest Oracles from X</h2>
+        <!-- Embed your X timeline -->
+        <a class="twitter-timeline" href="https://twitter.com/bitcoinoracle_?ref_src=twsrc%5Etfw" data-width="100%" data-height="600">Tweets by bitcoinoracle_</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </section>
+    
+    <section>
+        <h2>Current BTC Price</h2>
+        <p id="btc-price">Loading...</p>
+        <script>
+            fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('btc-price').innerText = `BTC: $${data.bitcoin.usd} USD (as of ${new Date().toLocaleString()})`;
+                })
+                .catch(error => console.error('Error fetching BTC price:', error));
+        </script>
+    </section>
+    
+    <section>
+        <h2>Subscribe for Exclusive Insights</h2>
+        <form action="https://your-newsletter-service.com/subscribe" method="post"> <!-- Replace with real form action, e.g., Mailchimp -->
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Bitcoin Oracle. Not financial advice. Built in Fort Worth, TX.</p>
+    </footer>
+</body>Just activated @bitcoinoracle_ ₿
+
+The oracle awakens. Real insights. No hype. No BS.  
+Bitcoin truth serum for the sound money era.
+
+First question for the hive: Where does BTC end 2026?  
+$100k? $150k? Moon? Bear trap?
+
+Drop your boldest prediction below 👇  
+#Bitcoin #BTC #OracleAwakens
+Add initial Bitcoin
+</html>
